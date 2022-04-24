@@ -16,7 +16,7 @@ These projects were used to build `{{ project_name }}`. **Thank you!**
 
 ### Indirect dependencies
 
-{%- if indirect_dependencies %}
+{%- if indirect_dependencies is defined %}
 {% for dep in indirect_dependencies -%}
 [`{{ dep }}`](https://pypi.org/project/{{ dep }}/){% if not loop.last %} |{% endif %}
 {%- endfor %}
